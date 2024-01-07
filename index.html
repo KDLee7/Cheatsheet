@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+        <title> HTML CheatSheet</title>
+        <link href="resources/css/styles.css" type="text/css" rel="stylesheet" >
+        <style>
+            body{
+                background-image: url('resources/images/white.jpg');
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>HTML Reference</h1>
+
+        <!-- Basic Structure of HTML page section-->
+        <h2>Basic Structure of an HTML Page Set Up</h2>
+        <h4><strong>HTML is organized into a family tree structure. The elements can have parents, grandparets, siblings, children, grandchildren, etc.</strong></h4>
+        <pre>
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p>&lt;html&gt;</p>
+        <p>        &lt;head&gt;</p>
+        <p>        &lt;/head&gt;</p>
+        <p>        &lt;body&gt;</p>
+        <p>        &lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+        </pre>
+        <!--Element Table List-->
+        <h2>Basic HTML Elements</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><!--HTML-->
+                    <td>&lt;html&gt; &lt;/html&gt;</td>
+                    <td>HTML Tags</td>
+                    <td>Opening and closing html tags. Declares the webpage to be written in HTML </td>
+                    <td>The opening tag should be right after the &lt;!DOCTYPE html&gt;, which should be at the very top. The closing tag should be at the very bottom of the page. </td>
+                </tr>
+                <tr><!--HEAD-->
+                    <td>&lt;head&gt; &lt;/head&gt;</td>
+                    <td>Head Tags</td>
+                    <td>Opening and closing head tags. Delimits the page's head. This section provides information essential about the document but are not directly visible to the user on the page. This includes the title tags, meta tags, link resources, such as css stylesheet, and scripts, such as js files. </td>
+                    <td>The head tag should be between the &lt;html&gt; and &lt;/html&gt; tags. </td>
+                </tr>
+                <tr><!--Title-->
+                    <td>&lt;title&gt; &lt;/title&gt;</td>
+                    <td>Title Tags</td>
+                    <td>Opening and closing title tags. Defines the title displayed on the web browser's tab (not displayed on the page). </td>
+                    <td>The title tag should be between the &lt;head&gt; and &lt;/head&gt; tags.</td>
+                </tr>
+                <tr><!--Body-->
+                    <td>&lt;body&gt; &lt;/body&gt;</td>
+                    <td>Title Tags</td>
+                    <td>Opening and closing body tags. Delimits the page's body.  Everything that is visible on the page, such as text, images, links, and other elements is typically placed between these tags. </td>
+                    <td>The title tag should be between the &lt;html&gt; and &lt;/html&gt; tags.</td>
+                </tr>
+                <tr><!--Paragraph-->
+                    <td>&lt;p&gt; &lt;/p&gt;</td>
+                    <td>Paragraph element</td>
+                    <td>Starts of paragraph</td>
+                    <td>The paragraph tag should be between the &lt;body&gt; and &lt;/body&gt; tags.</td>
+                </tr>
+                <tr><!--List Item-->
+                    <td>&lt;li&gt; &lt;/li&gt;</td>
+                    <td>List Item Tags</td>
+                    <td>Used to define list items.</td>
+                    <td>The list item tag should be between the &lt;ol&gt; and &lt;/ol&gt; tags, or  &lt;ul&gt; and &lt;/ul&gt; tags.</td>
+                </tr>
+                <tr><!--Ordered List-->
+                    <td>&lt;ol&gt; &lt;/ol&gt;</td>
+                    <td>Ordered List Tags</td>
+                    <td>Used to create a structured sequence of items where each list item (&lt;li&gt;&lt;/li&gt;) is marked with a numbered format on the webpage.</td>
+                    <td>The list item tag should be between the &lt;body&gt; and &lt;/body&gt; tags.</td>
+                </tr>
+                <tr><!--Unordered List-->
+                    <td>&lt;ul&gt; &lt;/ul&gt;</td>
+                    <td>Unordered List Tags</td>
+                    <td>Used to create a structured sequence of items where each list item (&lt;li&gt;&lt;/li&gt;) is marked with a bullet point format on the webpage.</td>
+                    <td>The list item tag should be between the &lt;body&gt; and &lt;/body&gt; tags.</td>
+                </tr>
+                <tr><!--Video Element-->
+                    <td>&lt;video src="test-video.mp4" controls&gt; &lt;/video&gt;</td>
+                    <td>Video Element</td>
+                    <td>Embeds a media player for playback. Adding the controls attribute will display video controls in the media player.
+                    <td>The video tag should be between the &lt;body&gt; and &lt;/body&gt; tags.</td>
+                </tr>
+                <tr><!--Image element-->
+                    <td>&lt;img src="image.jpg"&gt;</td>
+                    <td>Image Element</td>
+                    <td>Embeds an image on the page. It is considered an empty element, meaning it should not have a closing tag.</td>
+                    <td>The image tag should be between the &lt;body&gt; and &lt;/body&gt; tags.</td>
+                </tr>
+                <tr><!--Emphasis Element-->
+                    <td>&lt;em&gt; &lt;/em&gt;</td>
+                    <td>Emphasis Element</td>
+                    <td>Emphasizes text and browsers usually <em>italicize</em> the emphasized text by default</td>
+                    <td>The emphasis element goes around the text you want to emphasize</td>
+                </tr>
+                <tr><!--Strong Element-->
+                    <td>&lt;strong&gt; &lt;/strong&gt;</td>
+                    <td>Strong Element</td>
+                    <td>Used to give importance or strong emphasis to the enclosed text, usually in a <strong>bold format</strong></td>
+                    <td>The strong element goes around the text you want to give strong emphasis to</td>
+                </tr>
+                <tr><!--Line Break Element-->
+                    <td>&lt;br&gt;</td>
+                    <td>Line Break Element</td>
+                    <td>Will create a line break in the text and is especially useful where a division of text is required, like a postal address. It should not have a closing tag</td>
+                    <td>Anywhere you need your text to be forced on a new line</td>
+                </tr>
+                <tr><!--Heading Element-->
+                    <td>&lt;h1&gt; &lt;/h1&gt; -<br>&lt;h6&gt; &lt;/h6&gt;</td>
+                    <td>Heading Element</td>
+                    <td>HTML can use six different levels of heading elements. The highest level is &lt;h1&gt; and the lowest level is &lt;h6&gt;</td>
+                    <td>The list item tag should be between the &lt;body&gt; and &lt;/body&gt; tags.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--Table Section-->
+        <h2>HTML Table Reference</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><!--Table-->
+                    <td>&lt;table&gt; &lt;/table&gt;</td>
+                    <td>Table Tags</td>
+                    <td>The wrapper element for all HTML tables</td>
+                    <td>The table tag should be between the &lt;body&gt; and &lt;/body&gt; tags.</td>
+                </tr>
+                <tr><!--Table Head-->
+                    <td>&lt;thead&gt; &lt;/thead&gt;</td>
+                    <td>Table Head</td>
+                    <td>The set of rows defining the column headers in a table</td>
+                    <td>The table head should be between the &lt;table&gt; and &lt;/table&gt; tags.</td>
+                </tr>
+                <tr><!--Table Body-->
+                    <td>&lt;tbody&gt; &lt;/tbody&gt;</td>
+                    <td>Table Body</td>
+                    <td>The set of rows containging actually table data</td>
+                    <td>The table head should be between the &lt;table&gt; and &lt;/table&gt; tags.</td>
+                </tr>
+                <tr><!--Table Foot-->
+                    <td>&lt;tfoot&gt; &lt;/tfoot&gt;</td>
+                    <td>Table Foot</td>
+                    <td>The set of rows defining the footer in a table</td>
+                    <td>The table head should be between the &lt;table&gt; and &lt;/table&gt; tags.</td>
+                </tr>
+                <tr><!--Table Row-->
+                    <td>&lt;tr&gt; &lt;/tr&gt;</td>
+                    <td>Table Row</td>
+                    <td>The table row container</td>
+                    <td>The table row should be between the &lt;table&gt; and &lt;/table&gt; tags.</td>
+                </tr>
+                <tr><!--Table Data-->
+                    <td>&lt;td&gt; &lt;/td&gt;</td>
+                    <td>Table Data</td>
+                    <td>The table row container</td>
+                    <td>The table data should be between the &lt;tr&gt; and &lt;/tr&gt; tags.</td>
+                </tr>
+                <tr><!--Column Span-->
+                    <td>&lt;colspan="2"&gt;</td>
+                    <td>Column Span Attribute</td>
+                    <td>Used to define the number of columns a table cell should span (extend across) in a table</td>
+                    <td>The 'colspan' should be used with the &lt;td&gt; or &lt;th&gt; tags.</td>
+                </tr>
+                <tr><!--Row Span-->
+                    <td>&lt;rowspan="2"&gt;</td>
+                    <td>Row Span Attribute</td>
+                    <td>Defines how many rows a td element should span</td>
+                    <td>The 'rowspan' should be used with the &lt;td&gt; or &lt;th&gt; tags.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <footer>
+        <h6>Last Updated 2024<br>Kimberly Lee</h6>
+    </footer>
+</html>
